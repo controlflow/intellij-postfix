@@ -4,6 +4,12 @@ Examples
 ### instanceof
 ![foreach](/content/instanceof.gif)
 
+### not
+![foreach](/content/not.gif)
+
+### ! and if
+![foreach](/content/excl_if.gif)
+
 ### if and cast
 ![if and cast](/content/if_cast.gif)
 
