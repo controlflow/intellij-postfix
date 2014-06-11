@@ -10,17 +10,15 @@ what you are going to do and after finish with statement of some type.
 
 See [more examples](examples.md).
 
+#### Current state
+
+This plugin became a [core part of IntelliJ IDEA 13.1 experience](http://blog.jetbrains.com/idea/2014/03/postfix-completion/)!
+Source code is no longer maintained here.
+
 #### Download
 
-Plugin currently is under development.
-Pre-release versions are available for download in [IntelliJ IDEA plugin repository](http://plugins.jetbrains.com/plugin/7342).
+Latest builds for IDEA 13 is available for download in [IntelliJ IDEA plugin repository](http://plugins.jetbrains.com/plugin/7342).
 To install into IDEA simply go *Preferences* – *Plugins* – *Browse repositories...* and search for *"postfix"*.
-
-#### Version
-
-Currently plugin tested and works well with IDEA 13 CE (since first preview build v130.754),
-but you can easily build it against IDEA 12 SDK. When main development phase will be finished,
-I'll investigate ability to work in IDEA 12 and lower the required version if possible.
 
 #### Features
 
@@ -53,18 +51,6 @@ Other features:
 * Template expansion by `Tab` key in editor (like live templates)
 * Settings page to disable/enable particular postfix templates
 
-Future work:
-* `.try` – surrounds resource expression with `try (T resource = expr)`
-* Control braces insertion for statements (use code style settings?)
-* Completion char handling `expr.var.usage()` => `T x = expr; x.usage()`?
-* `1..10` - for (int i = 1; i < 10; i++) {}
-* `list.each` - for (E e : list) {}
-* `.for` should be equals to fori for int expressions and to `.each` for iterable expressions
-* `.while` should expand iterator expressions to while(iterator.hasNext()) { SomeType next = iterator.next() } 
-* `map`, `filter` and other stuff from `ContainerUtil` or Guava collections
-* Support non-Java languages
+#### .NET version
 
-#### Feedback
-
-Feel free to post any issues or feature requests here on github or contact me directly:
-* *alexander.shvedov[at]jetbrains.com*
+* [Postfix Templates plugin for ReSharper](https://github.com/controlflow/resharper-postfix)
